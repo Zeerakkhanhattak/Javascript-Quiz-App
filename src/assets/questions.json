@@ -1,0 +1,58 @@
+[
+    { 
+       "id": 1,
+      "question": "What is the difference between `==` and `===` in JavaScript?",
+      "options": [
+        "`==` checks for equality after type coercion, while `===` checks for strict equality without type coercion.",
+        "`==` checks for strict equality, while `===` allows type coercion.",
+        "Both check for equality, but `===` is used for objects.",
+        "`==` is deprecated and should not be used."
+      ],
+      "correctAnswer": 0
+    },
+    {
+       "id": 2,
+      "question": "What does the `this` keyword refer to inside an arrow function?",
+      "options": [
+        "The global object",
+        "The object that called the function",
+        "The lexical `this` context where the arrow function was defined",
+        "It depends on how the arrow function is called"
+      ],
+      "correctAnswer": 2
+    },
+    {
+       "id": 3,
+      "question": "What will be the output of the following code?\n\n```javascript\nconsole.log(typeof NaN);\n```",
+      "options": [
+        "`undefined`",
+        "`number`",
+        "`NaN`",
+        "`object`"
+      ],
+      "correctAnswer": 1
+    },
+    { 
+      "id": 4,
+      "question": "Which of the following will create a shallow copy of an object?",
+      "options": [
+        "Object.assign({}, obj)",
+        "JSON.parse(JSON.stringify(obj))",
+        "[...obj]",
+        "obj.clone()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "question": "What will the following code output and why?\n\n```javascript\n(function() {\n  var a = b = 5;\n  console.log(typeof a);\n  console.log(typeof b);\n})();\nconsole.log(typeof b);\n```",
+      "options": [
+        "Outputs `number`, `undefined`, and `undefined` because `b` is not declared in strict mode.",
+        "Outputs `number`, `number`, and `number` because `b` is declared globally.",
+        "Outputs `number`, `undefined`, and `number` because `b` is implicitly global.",
+        "Throws a ReferenceError because `b` is not declared."
+      ],
+      "correctAnswer": 1
+    }
+  ]
+  
